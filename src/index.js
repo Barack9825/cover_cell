@@ -6,8 +6,8 @@ import Product, {Navbar} from "./Product";*/
 import { Button } from "./Boton"; 
 /* import {TaskCard} from "./Task"
 import { Saludar } from "./Saludar"; */
-/* import { Post } from "./Posts";
- */
+import { Post } from "./Posts";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
@@ -43,9 +43,7 @@ function Counter(){
  */
 root.render(
     <>
-        <Button text='Click me'/>
-        <Button text='Pay'/>
-        <Button text='' name = 'Joe'/>
+        <Post/>
         {/* <Counter/> */}
     </>
     );
