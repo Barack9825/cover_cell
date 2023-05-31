@@ -1,50 +1,17 @@
-import React/* ,{useState, useEffect} */ from "react";
-import ReactDOM from "react-dom/client";
-
-/* import { Greetings, UserCard } from "./Greetings";
-import Product, {Navbar} from "./Product";*/
-import { Button } from "./Boton"; 
-/* import {TaskCard} from "./Task"
-import { Saludar } from "./Saludar"; */
-import { Post } from "./Posts";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 
 
-/* 
-function Counter(){
-
-    const[mensaje, setMensaje] = useState('')
-    
-    const [counter, setCounter]= useState(0)
-    
-    useEffect(() =>{
-        console.log('render')
-    },[counter]) 
-    
-    return (
-        <div>
-           <input onChange={e =>setMensaje(e.target.value)}/>
-           <button onClick={() => {
-            alert('El mensaje es:' + mensaje)
-           }}>
-               Save 
-           </button>
-
-           <hr/>
-
-            <h1>Counter:{counter}</h1>'
-           <button onClick ={() => setCounter(counter+1)}>
-            Incrementar
-           </button>
-        </div>
-    )
-}
- */
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <>
-        <Post/>
-        {/* <Counter/> */}
-    </>
-    );
- 
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
