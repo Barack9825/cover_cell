@@ -1,0 +1,10 @@
+.boton{
+    background-color:#fefefe;
+    color: #383434;
+    font-weight: 600;
+    border:2px solid gray;
+    box-shadow: 0px 2px lightgray;
+    box-shadow: 30px 0px white;
+    border-radius: 5px;
+    min-width: 100px;
+}
