@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.selectSize{
+    font-family: 'Roboto Condensed';
+    margin: 0;    
+    font-weight: bold;
+}
+
+.selectSize-container{
+    float:left;
+    min-width: fit-content;
+}
+
+.Title{
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 3em;
+    color:blueviolet;
+}
+.Title-container{
+    max-width: fit-content;
+    margin:auto;
+}
+.sub-Title{
+    font-family: 'Lobster', cursive ,Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 0px #aea1a1;
+}
+h3 {
+    color:gray;
+    
+}
+.Image-container{
+    height:60vh;
+    width: 30vw;
+    margin: auto;
+}
+.preview{
+    position: absolute;
+    left:1%;
+    top:50%;
+    height: 8vh;
+    width: 12vh;
+    border-radius: 50px;
+    border-color: white;
+    box-shadow: 2px 2px 2px;
+
+}

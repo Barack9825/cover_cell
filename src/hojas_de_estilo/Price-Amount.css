@@ -1,0 +1,12 @@
+.pt{
+    /* float:left; */
+    display: inline;
+    margin: 0px;
+}
+.amount{
+    display: inline;
+    position: absolute;
+    right: 0%;
+    
+    margin: 0px;
+}

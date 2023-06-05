@@ -1,10 +1,15 @@
 .boton{
     background-color:#fefefe;
     color: #383434;
-    font-weight: 600;
-    border:2px solid gray;
-    box-shadow: 0px 2px lightgray;
-    box-shadow: 30px 0px white;
-    border-radius: 5px;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    /* border-width:0px 1px 3px 4px; */
+    border-color: white;
+
+    box-shadow: 0px 2px 2px lightgray;
+    border-radius: 7px; 
     min-width: 100px;
+    
 }
