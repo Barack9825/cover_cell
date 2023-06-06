@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.selectSize{
+    font-family: 'Roboto Condensed';
+    margin: 0;    
+    font-weight: bold;
+}
+
+.selectSize-container{
+    float:left;
+    min-width: fit-content;
+}
+
+
+.Page{
+    border-color: green;
+}
+
+.model-container{
+    margin-bottom: 50px;
+}

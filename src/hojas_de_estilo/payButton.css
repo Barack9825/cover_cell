@@ -3,12 +3,28 @@
 .buttonContainer{
     width: 500px;
     margin:auto;
-    align-items: center;
+    place-content: center;
 }
 .card{
     background-color: green;
     color:white;
     font-family: 'Roboto Slab', serif;
-    height: 8vh;
+    font-size: 18px;
+    height: 6vh;
     width: 50%;
+    margin-left: 25%;
+    margin-top: 6vh;
+}
+
+.Paypal{
+    background-color: orange;
+    color:#666666;
+    font-size: 18px;
+    height: 6vh;
+    width: 50%;
+    /* align-items: center; */
+    /* margin: auto;
+    align-self: center; */
+    /* margin:inherit; */
+    /* margin:0px 125px; */
 }
