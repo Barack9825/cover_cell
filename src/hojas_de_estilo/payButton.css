@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.buttonContainer{
+    width: 500px;
+    margin:auto;
+    align-items: center;
+}
+.card{
+    background-color: green;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    height: 6vh;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 6vh;
+}

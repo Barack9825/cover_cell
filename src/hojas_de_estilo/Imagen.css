@@ -1,0 +1,16 @@
+.Image-container{
+    height:60vh;
+    width: 30vw;
+    margin: auto;
+}
+.preview{
+    position: absolute;
+    left:1%;
+    top:50%;
+    height: 8vh;
+    width: 12vh;
+    border-radius: 50px;
+    border-color: white;
+    box-shadow: 2px 2px 2px;
+
+}
