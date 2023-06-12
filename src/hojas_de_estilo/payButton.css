@@ -5,13 +5,22 @@
     margin:auto;
     align-items: center;
 }
-.card{
-    background-color: green;
-    color:white;
-    font-family: 'Roboto Slab', serif;
+.buttonPay{
     font-size: 18px;
     height: 6vh;
     width: 50%;
     margin-left: 25%;
     margin-top: 6vh;
+
+}
+
+.card{
+    background-color: green;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.PayPal{
+    background-color: orange;
+    color:rgb(61, 52, 52)
 }

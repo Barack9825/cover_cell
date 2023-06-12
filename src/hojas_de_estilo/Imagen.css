@@ -1,7 +1,14 @@
-.Image-container{
+.Image-container1{
     height:60vh;
     width: 30vw;
     margin: auto;
+}
+
+.Image-container2{
+    float:left;
+    height: 5vh;
+    width: 2.5vw;
+    background-color: blue;
 }
 .preview{
     position: absolute;

@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-
+.Page{
+    margin: 0px 150px;
+}
 .selectSize{
     font-family: 'Roboto Condensed';
     margin: 0;    
@@ -15,7 +17,9 @@
     min-width: fit-content;
 }
 
-
+.datos-contenedor{
+    margin: 0px 125px;
+}
 
 
 .model-container{
