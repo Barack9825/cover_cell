@@ -4,7 +4,6 @@ import '../hojas_de_estilo/payButton.css'
 import PBI from "./Pay-Button-Inner";
 
 function PayButton(props) {
-    var x=5;
     
     return(
         
@@ -12,7 +11,9 @@ function PayButton(props) {
             <button className= {`buttonPay ${props.style}`}>
                 <PBI 
                 style={props.style}
-                text={props.text}/>
+                text={props.text}
+                text1={props.text1}
+                text2={props.text2}/>
             </button>
            
         </div>

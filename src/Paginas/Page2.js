@@ -18,8 +18,19 @@ function Page2(){
                 cantidad={5}/>
                 
             </div>
-            <PayButton style='card'/>
-
+            <div className="groupOfButton">
+                <PayButton 
+                style='card'
+                text='Check out'/>
+                <PayButton
+                style='PayPal'
+                text1='Buy with '
+                text2='PayPal'/>
+                <PayButton
+                style='Ipad'
+                text1='Buy with '
+                text2='Icloud'/>
+            </div>
         </div>
         
     )

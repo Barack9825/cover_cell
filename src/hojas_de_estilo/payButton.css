@@ -10,8 +10,8 @@
     height: 6vh;
     width: 50%;
     margin-left: 25%;
-    margin-top: 6vh;
-
+    margin-top: 2vh;
+    font-family: 'Roboto Slab', serif;
 }
 
 .card{
@@ -23,4 +23,15 @@
 .PayPal{
     background-color: orange;
     color:rgb(61, 52, 52)
+}
+.Ipad{
+    background-color: blue;
+    color:aliceblue
+}
+.text1{
+    display: inline;
+}
+.text2{
+    display: inline;
+    font-weight: bolder;
 }
