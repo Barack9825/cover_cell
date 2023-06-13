@@ -1,8 +1,14 @@
 import React from "react";
 import '../hojas_de_estilo/Item.css'
 function Item(props){
-    return(
-        <p className="itemTitle">{props.itemTitle}</p>
-    )
+    switch(props.page){
+        case 2:
+            return(
+                <p className="itemTitle">{props.itemTitle}</p>
+            )
+        case 3:
+                
+    }
+    
 }
 export default Item
