@@ -5,21 +5,20 @@ function Imagen(props) {
     switch (props.page){
         case 1:
             return(
-                <div className="Image-container page1">
-                <img alt="Imagen de cover"/>
-                <button className="preview">button</button>
+                <div className="Image-container1">
+                    <img alt="Imagen de cover"/>
+                    <button   button className="preview">button</button>
               </div>
             )
-            
         case 2:
             return(
-                <div className="Image-container page2">
-                <img alt="Imagen de cover"/> 
+                <div className="Image-container2">
+                  <img alt="Imagen de cover"/> 
                 </div>
             )
-            
         default:
-            break;}
+            break;
+    }
     
 }
 export default Imagen;

@@ -3,28 +3,35 @@
 .buttonContainer{
     width: 500px;
     margin:auto;
-    place-content: center;
+    align-items: center;
 }
-.card{
-    background-color: green;
-    color:white;
-    font-family: 'Roboto Slab', serif;
+.buttonPay{
     font-size: 18px;
     height: 6vh;
     width: 50%;
     margin-left: 25%;
-    margin-top: 6vh;
+    margin-top: 2vh;
+    font-family: 'Roboto Slab', serif;
 }
 
-.Paypal{
+.card{
+    background-color: green;
+    color:white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.PayPal{
     background-color: orange;
-    color:#666666;
-    font-size: 18px;
-    height: 6vh;
-    width: 50%;
-    /* align-items: center; */
-    /* margin: auto;
-    align-self: center; */
-    /* margin:inherit; */
-    /* margin:0px 125px; */
+    color:rgb(61, 52, 52)
+}
+.Ipad{
+    background-color: blue;
+    color:aliceblue
+}
+.text1{
+    display: inline;
+}
+.text2{
+    display: inline;
+    font-weight: bolder;
 }

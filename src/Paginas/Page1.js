@@ -1,10 +1,12 @@
 
-import './Page1.css';
+import './Page.css';
 import Boton from '../componentes/Boton';
 import PayButton from '../componentes/PayButton';
 import Price_Amount from '../componentes/Price-Amount';
 import Title from '../componentes/Title';
 import Imagen from '../componentes/Imagen';
+import {AiOutlineShoppingCart} from 'react-icons/ai'
+
 
 function Page() {
   return (
@@ -29,7 +31,7 @@ function Page() {
      </div>
     <PayButton 
     style='card'
-    text='Add to card'/>
+    text= 'Add to card'/>
     </div>
   );
 }

@@ -1,7 +1,14 @@
-.Image-container {
-    
+.Image-container1{
+    height:60vh;
+    width: 30vw;
     margin: auto;
-    background-color: gray;
+}
+
+.Image-container2{
+    float:left;
+    height: 5vh;
+    width: 2.5vw;
+    background-color: blue;
 }
 .preview{
     position: absolute;
@@ -9,22 +16,8 @@
     top:50%;
     height: 8vh;
     width: 12vh;
-    min-width: 60px;
     border-radius: 50px;
     border-color: white;
     box-shadow: 2px 2px 2px;
 
-}
-
-.page1{
-    height:60vh;
-    width: 30vw;
-}
-
-.page2{
-    float: left;
-    overflow: auto;
-    height: 10vh;
-    width: 4vw;
-    margin-left:90px
 }

@@ -1,14 +1,11 @@
 .Title{
     font-family: 'Dancing Script', cursive, sans-serif;
-    font-size: 50px;
+    font-size: 3em;
     color:blueviolet;
-    
-    
 }
 .Title-container{
-    width: fit-content;
+    max-width: fit-content;
     margin:auto;
-    
 }
 .sub-Title{
     font-family: 'Lobster', cursive ,Verdana, Geneva, Tahoma, sans-serif;

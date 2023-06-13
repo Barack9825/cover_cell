@@ -1,0 +1,31 @@
+.itemTitle{
+    color: #383434;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: white; 
+}
+
+.itemBuy{
+    background-color:#c1c0c0;
+    width:80%;
+    margin:auto;
+    padding: 25px 15px;
+    font-size: 25px;
+}
+
+.data{
+    display: inline-block;
+    padding: 25px 25px;
+    
+}
+
+.heading{
+    color:white;
+    background-color: red;
+}
+
+.body{
+    color:black;
+    background-color: yellow;
+}
