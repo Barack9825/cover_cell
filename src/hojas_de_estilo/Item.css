@@ -5,3 +5,38 @@
     font-family: 'Times New Roman', Times, serif;
     border-color: white; 
 }
+
+.itemBuy{
+    font-size: 25px;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    /* background-color: red; */
+}
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear:left;
+}
+    
+
+
+.heading{
+    /* color:white; */
+    text-align: center;
+    
+}
+
+.body{
+    float:left;
+    color:black;
+    /* background-color: yellow; */
+}
+.Navigate{
+
+    float: right;
+}

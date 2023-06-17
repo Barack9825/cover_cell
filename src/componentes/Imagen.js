@@ -10,14 +10,14 @@ function Imagen(props) {
                     <button   button className="preview">button</button>
               </div>
             )
-            break;
         case 2:
             return(
                 <div className="Image-container2">
                   <img alt="Imagen de cover"/> 
                 </div>
             )
-
+        default:
+            break;
     }
     
 }

@@ -12,7 +12,9 @@ function Page2(){
             
             <Imagen page= {2}/>
             <div className="datos-contenedor">
-                <Item itemTitle='Iphone'/>
+                <Item 
+                itemTitle='Iphone'
+                page={2}/>
                 <Price_Amount 
                 precio='60$'
                 cantidad={5}/>

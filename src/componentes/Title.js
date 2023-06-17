@@ -18,7 +18,7 @@ function Title(props) {
                 
                 </>  
             );
-            break;
+           
             
     case 2: 
         return(
@@ -29,7 +29,7 @@ function Title(props) {
             
         </>  
         );
-        break;
+       
     default :
         break;
     }
