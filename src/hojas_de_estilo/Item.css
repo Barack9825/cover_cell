@@ -7,25 +7,36 @@
 }
 
 .itemBuy{
-    background-color:#c1c0c0;
-    width:80%;
-    margin:auto;
-    padding: 25px 15px;
     font-size: 25px;
 }
 
-.data{
-    display: inline-block;
-    padding: 25px 25px;
+.column{
+    float: left;
+    width: 33.33%;
+    /* background-color: red; */
+}
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear:left;
+}
+    
+
+
+.heading{
+    /* color:white; */
+    text-align: center;
     
 }
 
-.heading{
-    color:white;
-    background-color: red;
-}
-
 .body{
+    float:left;
     color:black;
-    background-color: yellow;
+    /* background-color: yellow; */
+}
+.Navigate{
+
+    float: right;
 }

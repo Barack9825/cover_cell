@@ -1,6 +1,7 @@
 import React from "react";
 import '../hojas_de_estilo/Item.css'
 import { MdNavigateNext } from "react-icons/md"
+import SubItem from "./SubITem";
 
 function Item(props){
     switch(props.page){
@@ -10,11 +11,29 @@ function Item(props){
             )
         case 3:
             return(
-                <div className="itemBuy">
-                    <p className='heading data'>{props.heading}</p>
-                    <p className="body data">{props.data}</p>
-                    <p className='data'><MdNavigateNext /></p>
+                <div>
+                    <div className="itemBuy row">
+                        
+                        <div className="column">
+                            <p className='heading'>{props.heading}</p>
+                        </div>
+                        
+                        <div className="column">
+                            
+                        <SubItem
+                        data={props.data}/>
+
+                            
+                        </div>
+                        
+                        <div className="column">
+                            <p className="Navigate"><MdNavigateNext /></p>
+                        </div> 
+                    
+                     </div>    
+                     <hr></hr> 
                 </div>
+                
             )
         default:
             break;
