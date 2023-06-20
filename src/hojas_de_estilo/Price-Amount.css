@@ -23,4 +23,20 @@
     font-size: larger;
     margin: 0;
     }
-    
+.Pay{
+    display: inline;
+    position: relative;
+    left: 5%;
+}
+.Cancel{
+    float:  right;
+    position: relative;
+    right: 5%;
+    color: blue;
+    margin: 0;
+}
+.Cancel::after{
+    content: '';
+    display: block;
+    clear: both;
+}

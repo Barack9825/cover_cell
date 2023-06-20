@@ -17,7 +17,8 @@ function Page() {
       
       <Price_Amount
         precio='60$'
-        cantidad={5}/>
+        cantidad={5}
+        price='price'/>
       <div className='selectSize-container'>
         <p className='selectSize'>Select size :</p>
         </div>

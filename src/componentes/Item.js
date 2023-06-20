@@ -19,11 +19,11 @@ function Item(props){
                         </div>
                         
                         <div className="column">
-                            {props.data.forEach(element => {
-                                <p> {element} </p>
-                            })}
-                            {/* <SubItem
-                            data={props.data}/> */}
+                            
+                        <SubItem
+                        data={props.data}/>
+
+                            
                         </div>
                         
                         <div className="column">

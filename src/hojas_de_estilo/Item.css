@@ -9,6 +9,9 @@
 .itemBuy{
     font-size: 25px;
 }
+.itemBuy::before{
+    display: block;
+}
 
 .column{
     float: left;

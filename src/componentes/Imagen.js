@@ -16,6 +16,15 @@ function Imagen(props) {
                   <img alt="Imagen de cover"/> 
                 </div>
             )
+        case 3: return(
+            <>
+            <div className="Image-container3">
+                <img alt='preview'/>
+                
+            </div>
+            <hr></hr>
+            </>
+        )
         default:
             break;
     }

@@ -1,11 +1,16 @@
 import React from "react";
 
+
 function SubItem(props){
-    props.data.forEach(element => {
+    const datas= props.data.map((element,index)=>{
         return(
-            <h>1</h>
-        );    
-    });
-    
+        <p key = {index}>{element} <br></br></p>
+        )
+    })
+
+    return(
+        <>{datas}</>
+    );
 }
+
 export default SubItem;
