@@ -6,6 +6,10 @@
 .Page{
     margin: 0px 150px;
 }
+.Page3{
+    background-color: #efefef;
+    margin: 35px
+}
 .selectSize{
     font-family: 'Roboto Condensed';
     margin: 0;    
@@ -28,4 +32,9 @@
 
 .groupOfButton{
     margin-top: 20vh;
+}
+.foot{
+    margin-left: 50%;
+    color: #888;
+    font-size: 20px;
 }

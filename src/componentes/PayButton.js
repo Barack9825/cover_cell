@@ -1,14 +1,18 @@
-import React from "react";
-
+import React,{useContext} from "react";
 import '../hojas_de_estilo/payButton.css'
 import PBI from "./Pay-Button-Inner";
+import { AppContext } from "../Context/AppContext";
 
 function PayButton(props) {
     
+    const { Avanzar } = useContext(AppContext)
+
     return(
-        
+
         <div className="buttonContainer">
-            <button className= {`buttonPay ${props.style}`}>
+            <button 
+            className= {`buttonPay ${props.style}`}
+            onClick={Avanzar}>
                 <PBI 
                 style={props.style}
                 text={props.text}
