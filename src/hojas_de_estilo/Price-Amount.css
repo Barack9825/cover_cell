@@ -10,24 +10,39 @@
 .amount{
     float: right;
     display: inline;
-    
-    
-    
-    
-    /* top: 0px; */
     margin: 0px;
 }
+
+.select{
+    float:right;
+    width: 35px;
+    height: 35px;
+    border-radius: 15px;
+    border-color:white;
+    cursor:pointer;
+}
+
+.mas{
+    background-color: #e3e3e3;
+}
+
+.menos{
+    background-color: #f9f9f9;
+}
+
 .precio{
     display: block;
     font-family: 'Oswald', sans-serif;
     font-size: larger;
     margin: 0;
     }
-.Pay{
+
+    .Pay{
     display: inline;
     position: relative;
     left: 5%;
 }
+
 .Cancel{
     float:  right;
     position: relative;
@@ -40,3 +55,9 @@
     display: block;
     clear: both;
 }
+
+.Cancel:hover{
+    color:#2266ff;
+    cursor:pointer
+}
+

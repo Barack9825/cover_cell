@@ -1,23 +1,30 @@
-
+import React,{useContext} from 'react';
 import './Page.css';
 import Boton from '../componentes/Boton';
 import PayButton from '../componentes/PayButton';
-import Price_Amount from '../componentes/Price-Amount';
+import PriceAmount from '../componentes/Price-Amount';
 import Title from '../componentes/Title';
 import Imagen from '../componentes/Imagen';
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { AppContext } from '../Context/AppContext';
+import Selector from '../componentes/Selector';
 
 
 function Page() {
+
+  const {cantidad, Avanzar, addToCar} = useContext(AppContext)
+
   return (
     <div className="Page">
-      <Title page={1}/>
+      <Selector/>
+      <Title/>
       
       <Imagen page={1}/>
       
-      <Price_Amount
+      <PriceAmount
+        page={1}
         precio='60$'
-        cantidad={5}
+        cantidad={cantidad}
         price='price'/>
       <div className='selectSize-container'>
         <p className='selectSize'>Select size :</p>
@@ -31,6 +38,7 @@ function Page() {
         <Boton text = 'Iphone'/>
      </div>
     <PayButton 
+    ManejarClick={addToCar}
     style='card'
     text= 'Add to card'/>
     </div>

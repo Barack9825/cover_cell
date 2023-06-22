@@ -1,13 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
 import Title from "../componentes/Title";
-import Price_Amount from "../componentes/Price-Amount";
+import PriceAmount from "../componentes/Price-Amount";
 import Imagen from "../componentes/Imagen";
 import Item from "../componentes/Item";
 import "./Page.css";
 import PayButton from "../componentes/PayButton";
+import { AppContext } from "../Context/AppContext";
+import Selector from "../componentes/Selector";
+
 function Page2(){
+
+    const {Retroceder, Avanzar} = useContext(AppContext)
+
     return(
         <div className="Page">
+            <Selector/>
             <Title page={2}/>
             
             <Imagen page= {2}/>
@@ -15,13 +22,14 @@ function Page2(){
                 <Item 
                 itemTitle='Iphone'
                 page={2}/>
-                <Price_Amount 
+                <PriceAmount 
                 precio='60$'
                 cantidad={5}/>
                 
             </div>
             <div className="groupOfButton">
                 <PayButton 
+                ManejarClick={Avanzar}
                 style='card'
                 text='Check out'/>
                 <PayButton
