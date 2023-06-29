@@ -1,32 +1,37 @@
-.Image-container1{
-    height:60vh;
-    width: 30vw;
+.Image-container1 {
+    position: relative;
+    max-height: 50vh;
+    max-width: 25vw;
+    display: flex;
+    justify-content: center;
     margin: auto;
 }
 
-.Image-container2{
-    float:left;
-    height: 5vh;
-    width: 2.5vw;
-    background-color: blue;
+.Close {
+    height: 90%;
+    width: 100%
 }
 
-.Image-container3{
-    height:60vh;
+.Image-container2 {
+    float: left;
+    height: 15vh;
+    width: 10vw;
+
+}
+
+.Image-container3 {
+    height: 60vh;
     width: 50vw;
     margin: auto;
     background-color: black;
 }
 
 
-.preview{
-    position: absolute;
-    left:1%;
-    top:50%;
-    height: 8vh;
-    width: 12vh;
-    border-radius: 50px;
-    border-color: white;
-    box-shadow: 2px 2px 2px;
+.cover {
+    height: 100%;
+    width: 50%;
+    border-radius: 15%;
+    margin: auto
+    /* margin: 0 20%; */
 
 }

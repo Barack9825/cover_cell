@@ -1,17 +1,21 @@
-.Title{
+.Title {
     font-family: 'Dancing Script', cursive, sans-serif;
     font-size: 3em;
-    color:blueviolet;
+    color: blueviolet;
 }
-.Title-container{
+
+.Title-container {
     max-width: fit-content;
-    margin:auto;
+    margin: auto;
+    height: 33.33%;
 }
-.sub-Title{
-    font-family: 'Lobster', cursive ,Verdana, Geneva, Tahoma, sans-serif;
+
+.sub-Title {
+    font-family: 'Lobster', cursive, Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 2px 2px 0px #aea1a1;
 }
+
 h3 {
-    color:gray;
-    
+    color: gray;
+
 }

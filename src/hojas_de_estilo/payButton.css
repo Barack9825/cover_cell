@@ -1,37 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-.buttonContainer{
+.buttonContainer {
     width: 500px;
-    margin:auto;
+    margin: auto;
     align-items: center;
 }
-.buttonPay{
+
+.buttonPay {
     font-size: 18px;
     height: 6vh;
     width: 50%;
     margin-left: 25%;
     margin-top: 2vh;
     font-family: 'Roboto Slab', serif;
+    justify-content: center;
 }
 
-.card{
+.card {
     background-color: green;
-    color:white;
+    color: white;
     font-family: 'Roboto Slab', serif;
 }
 
-.PayPal{
+.PayPal {
     background-color: orange;
-    color:rgb(61, 52, 52)
+    color: rgb(61, 52, 52)
 }
-.Ipad{
+
+.Ipad {
     background-color: blue;
-    color:aliceblue
+    color: aliceblue
 }
-.text1{
+
+.text1 {
     display: inline;
+    padding-left: 5px;
 }
-.text2{
+
+.text2 {
     display: inline;
     font-weight: bolder;
 }

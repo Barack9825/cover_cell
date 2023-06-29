@@ -11,7 +11,7 @@ function Price_Amount(props){
         
         case 0:
             return(
-                <div>
+                <div className="PA-container">
                     
                     <button 
                     className="select mas"
@@ -38,6 +38,7 @@ function Price_Amount(props){
                     <h1 className="Pay">{props.Pay}</h1>
                     <h1 className="Cancel"
                     onClick={Retroceder}>{props.Cancel}</h1>
+                    <hr></hr>
                 </div>
             )
         default:

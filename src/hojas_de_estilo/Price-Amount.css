@@ -1,63 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
-.pt{
+.PA-container{
+    margin: 0px 60px;
+}
+
+.pt {
 
     display: inline;
     margin: 0px;
-    
-    
 }
-.amount{
+
+.amount {
     float: right;
     display: inline;
     margin: 0px;
 }
 
-.select{
-    float:right;
+.select {
+    float: right;
     width: 35px;
     height: 35px;
     border-radius: 15px;
-    border-color:white;
-    cursor:pointer;
+    border-color: lightgray;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #777;
 }
 
-.mas{
+.mas {
     background-color: #e3e3e3;
 }
 
-.menos{
+.mas:hover,
+.menos:hover {
+    background-color: #444;
+    color: #eee
+}
+
+.menos {
     background-color: #f9f9f9;
 }
 
-.precio{
+.precio {
     display: block;
     font-family: 'Oswald', sans-serif;
     font-size: larger;
     margin: 0;
-    }
+}
 
-    .Pay{
+.Pay {
     display: inline;
     position: relative;
     left: 5%;
 }
 
-.Cancel{
-    float:  right;
+.Cancel {
+    float: right;
     position: relative;
     right: 5%;
     color: blue;
     margin: 0;
 }
-.Cancel::after{
+
+.Cancel::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.Cancel:hover{
-    color:#2266ff;
-    cursor:pointer
+.Cancel:hover {
+    color: #2266ff;
+    cursor: pointer
 }
-

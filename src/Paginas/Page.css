@@ -3,39 +3,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-.Page{
-    margin: 0px 150px;
+.Page {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+ */    /* height: 100px; */
 }
-.Page3{
-    background-color: #efefef;
-    margin: 35px
+
+.header {
+    /* height: 25%; */
 }
-.selectSize{
+
+.content {
+    position: relative;
+    height: 50%;
+}
+
+.footer{
+    /* height: 25%; */
+}
+
+/*Pagina 1*/
+
+.fondo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 120%;
+
+}
+
+.selectSize-container {
+
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.selectSize {
     font-family: 'Roboto Condensed';
-    margin: 0;    
+    margin: 0;
     font-weight: bold;
+    float: left;
 }
 
-.selectSize-container{
-    float:left;
-    min-width: fit-content;
+.model-container {
+    margin-bottom: 50px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-.datos-contenedor{
+.preview {
+    position: absolute;
+    left: 1%;
+    bottom: 50%;
+    background-color: #ccc;
+    max-height: 18%;
+    max-width: 10%;
+    aspect-ratio: 1.5;
+    border-radius: 50px;
+    border-color: lightgray;
+    box-shadow: 3px 3px 5px #777;
+
+}
+
+/*Pagina 2*/
+
+.datos-contenedor {
     margin: 0px 125px;
 }
 
-
-.model-container{
-    margin-bottom: 50px;
-}
-
-.groupOfButton{
+.groupOfButton {
     margin-top: 20vh;
 }
-.foot{
+
+/*Pagina 3*/
+
+.foot {
     margin-left: 50%;
     color: #888;
     font-size: 20px;
 }
-

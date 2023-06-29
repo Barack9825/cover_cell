@@ -5,10 +5,18 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 10px;
-    border-color: white;
-
-    box-shadow: 0px 2px 2px lightgray;
+    margin-bottom: 10px;    
+    border-color: lightgray;
+    width: 200px;
+    box-shadow: 0px 2px 2px #666;
     border-radius: 7px; 
-    min-width: 100px;
     
+    
+}
+
+.boton:hover{
+    background-color: #383434;
+    color: #fefefe;
+    box-shadow: 0px 2px 2px lightgray;
+    cursor: pointer;
 }
