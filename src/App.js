@@ -1,20 +1,29 @@
-import React, {useContext} from "react";
-import './App.css'
-import Page1 from "./Paginas/Page1";
-import Page2 from "./Paginas/Page2"
-import Page3 from "./Paginas/Page3";
+import React, { useContext } from "react";
 import { AppContext } from "./Context/AppContext";
+import './App.css'
 
-function App(){
-    
-    const pageContainer = [<Page1/>,<Page2/>,<Page3/>]
-    
-    const {pagina} = useContext(AppContext);
-    
-    return(
+import Recepcion from "./Paginas/Recepcion";
+import Cuentas from "./Paginas/Cuentas";
+import Factura from "./Paginas/Factura";
+import Compra from "./Paginas/Compra";
+import Carro from "./Paginas/Carro";
+
+function App() {
+
+    const paginado = {
+        'Recepción': <Recepcion />,
+        'Cuentas': <Cuentas />,
+        'Factura': <Factura />,
+        'Compra': <Compra />,
+        'Carro': <Carro />
+    }
+
+    const { pagina } = useContext(AppContext);
+
+    return (
         <div className="App">
-           
-            {pageContainer[pagina]}
+
+            {paginado[pagina]}
 
         </div>
     );

@@ -1,0 +1,19 @@
+
+
+.Option{
+    background-color: #222;
+    color:white;
+    text-align: right;
+    height: 150px;
+}
+
+.optionText{
+    /* float: right; */
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    font-family: Belanosima;
+    position: relative;
+    top:25%;
+    right:5%;
+}

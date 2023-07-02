@@ -1,61 +1,70 @@
-import React, { useState } from "react";
-import { createContext } from "react";
+import React, { useState, createContext } from "react";
+export const AppContext = createContext();
 
 
-export const AppContext = createContext()
 
-function AppContextProvider(props){
+function AppContextProvider(props) {
 
-    const[page,setPage] = useState(0)
+    let directory;
 
-    const[amount,setAmount] = useState(0)
+    const [page, setPage] = useState('Compra');
 
-    const[car,setCar] = useState()
+    const [amount, setAmount] = useState(0);
 
-    const[price,setPrice] = useState(60)
+    const [car, setCar] = useState();
 
-    const[total,setTotal] = useState(0)
+    const [price, setPrice] = useState(60);
 
-    function addToCar(){
-        setCar(price)
-        setTotal(total+price*amount)
-    }
+    const [total, setTotal] = useState(0);
+
+
+    function addToCar() {
+        setCar(price);
+        setTotal(total + price * amount);
+    };
 
     /* function Select(){
         
     } */
 
-    function Avanzar(){
-     setPage(page+1)   
+    const paginado = ["Recepción", "Carro", "Cuentas", "Factura", "Compra"]
+
+    const goTO = paginado.map((element) => {
+        return (
+            () => {
+                setPage(element)
+            }
+        )
+    })
+
+    function Aumentar() {
+        setAmount(amount + 1)
     }
 
-    function Retroceder(){
-        setPage(page-1)
+    function Disminuir() {
+        setAmount(amount - 1)
     }
 
-    function Aumentar(){
-        setAmount(amount+1)
-    }
-
-    function Disminuir(){
-        setAmount(amount-1)
-    }
-
-    return(
-    <AppContext.Provider
-    value = {
-        {pagina:page,
-        cantidad:amount,
-        precio:price,
-        carro:car,
-        total:total,
-        addToCar,
-        Avanzar,
-        Retroceder,
-        Aumentar,
-        Disminuir}}>
-        {props.children}
-    </AppContext.Provider>
+    return (
+        <AppContext.Provider
+            value={
+                {
+                    pagina: page,
+                    cantidad: amount,
+                    precio: price,
+                    carro: car,
+                    total: total,
+                    Recepcion: goTO[0],
+                    Carro: goTO[1],
+                    Cuenta: goTO[2],
+                    Factura: goTO[3],
+                    Compra: goTO[4],
+                    addToCar,
+                    Aumentar,
+                    Disminuir
+                }}>
+            {props.children}
+        </AppContext.Provider>
     );
 }
 

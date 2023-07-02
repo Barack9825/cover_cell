@@ -1,16 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
-import { AppContext } from '../Context/AppContext';
 import '../hojas_de_estilo/Selector.css'
 
 
-function Selector({ directory }) {
+function Selector({ directory,ManejarClick }) {
 
-  const { Avanzar, Retroceder } = useContext(AppContext)
   return (
     <button
       className={`arrow ${directory}`}
-      onClick={directory === 'Avanzar' ? Avanzar : Retroceder}>
+      onClick={ManejarClick}>
       {directory === "Retroceder" ? <AiOutlineArrowLeft /> : <AiOutlineArrowRight />}
     </button>
   );

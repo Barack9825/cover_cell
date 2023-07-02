@@ -1,49 +1,54 @@
 import React, { useContext } from 'react';
-import './Page.css';
+import { AppContext } from '../Context/AppContext';
+import './Pagina.css';
+
 import Boton from '../componentes/Boton';
+import Fondo from '../componentes/Fondo';
+import Imagen from '../componentes/Imagen';
 import PayButton from '../componentes/PayButton';
 import PriceAmount from '../componentes/Price-Amount';
-import Title from '../componentes/Title';
-import Imagen from '../componentes/Imagen';
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { AppContext } from '../Context/AppContext';
 import Selector from '../componentes/Selector';
+import Title from '../componentes/Title';
+
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 
-function Page() {
 
-  const { cantidad, addToCar } = useContext(AppContext)
+function Compra() {
+
+  const { addToCar, Carro, Recepcion } = useContext(AppContext)
 
   return (
+
     <div className="Page">
 
-      <img
-        className='fondo'
-        src={require('../assets/Fondo-minimalista.jpg')}
-        alt='fondo de la app' />
-      <div className='header'>
-        <Selector
-          directory='Avanzar' />
+      <Fondo />
+      <Selector
+        directory='Avanzar'
+        ManejarClick={Carro} />
 
-        <Selector
-          directory='Retroceder' />
-        <Title />
-      </div>
+      <Selector
+        directory='Retroceder'
+        ManejarClick={Recepcion} />
+
+      <Title
+        title='Nila'
+        subtitle='Cover for Iphone'
+        thirdtitle='personalized' />
 
       <div className='content'>
+
         <button className="preview"><Imagen out={false} /></button>
         <Imagen />
+
       </div>
-      
+
       <div className='footer'>
 
-        <PriceAmount
-          page={1}
-          precio='60$'
-          cantidad={cantidad}
-          price='price' />
+        <PriceAmount />
 
         <div className='selectSize-container'>
+
           <p className='selectSize'>Select size :</p>
 
           <div className='model-container'>
@@ -53,16 +58,21 @@ function Page() {
             <Boton text='Iphone' />
             <Boton text='Iphone' />
             <Boton text='Iphone' />
+
           </div>
+
         </div>
+
         <PayButton
           ManejarClick={addToCar}
-          style='card'
+          typeButton='card'
           text1={<AiOutlineShoppingCart />}
           text2='Add to card' />
+
       </div>
+
     </div>
   );
 }
 
-export default Page;
+export default Compra;

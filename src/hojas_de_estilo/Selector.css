@@ -16,3 +16,10 @@
 .Retroceder {
     float: left;
 }
+
+.arrow:hover{
+    color:#fff;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #666;
+}

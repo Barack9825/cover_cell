@@ -1,20 +1,25 @@
 import React, { useContext } from "react";
 import { BiTrendingUp } from "react-icons/bi"
-import Item from "../componentes/Item";
-import PriceAmount from "../componentes/Price-Amount";
+import './Pagina.css'
+
+import Fondo from "../componentes/Fondo";
 import Imagen from "../componentes/Imagen";
+import Item from "../componentes/Item";
 import PayItem from "../componentes/PayItem";
+import PriceAmount from "../componentes/Price-Amount";
+
+
 import { AppContext } from "../Context/AppContext";
 
-function Page3() {
+function Factura() {
 
   const { precio, total } = useContext(AppContext)
 
   return (
-    <div className='Page3'>
+    <div className='Page'>
 
-      <Imagen
-        page={3} />
+      <Fondo />
+      <Imagen />
 
       <PriceAmount
         Pay='Pay'
@@ -41,4 +46,4 @@ function Page3() {
   );
 }
 
-export default Page3;
+export default Factura;

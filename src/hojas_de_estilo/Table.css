@@ -1,0 +1,13 @@
+.column{
+    float: left;
+    width: 33.33%;
+    /* background-color: red; */
+}
+
+
+
+.row::after{
+    content: "";
+    display: table;
+    clear:left;
+}

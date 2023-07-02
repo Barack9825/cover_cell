@@ -1,45 +1,32 @@
-.itemTitle{
+.itemTitle {
     color: #383434;
     font-weight: 200;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    border-color: white; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-color: white;
 }
 
-.itemBuy{
+.itemBuy {
     font-size: 25px;
 }
-.itemBuy::before{
+
+.itemBuy::before {
     display: block;
 }
 
-.column{
-    float: left;
-    width: 33.33%;
-    /* background-color: red; */
-}
-
-
-.row::after{
-    content: "";
-    display: table;
-    clear:left;
-}
-    
-
-
-.heading{
+.heading {
     /* color:white; */
     text-align: center;
-    
+
 }
 
-.body{
-    float:left;
-    color:black;
+.body {
+    float: left;
+    color: black;
     /* background-color: yellow; */
 }
-.Navigate{
+
+.Navigate {
 
     float: right;
 }

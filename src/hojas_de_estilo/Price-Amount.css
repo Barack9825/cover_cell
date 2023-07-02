@@ -1,20 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
-.PA-container{
+.PA-container {
     margin: 0px 60px;
 }
 
 .pt {
-
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: inline;
     margin: 0px;
 }
 
 .amount {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     float: right;
     display: inline;
     margin: 0px;
 }
+
+.precio {
+    display: block;
+    font-family: Belanosima, sans-serif;
+    font-size: larger;
+    margin: 0;
+}
+
 
 .select {
     float: right;
@@ -30,21 +38,19 @@
     background-color: #e3e3e3;
 }
 
+.menos {
+    background-color: #f9f9f9;
+}
+
 .mas:hover,
 .menos:hover {
     background-color: #444;
     color: #eee
 }
 
-.menos {
-    background-color: #f9f9f9;
-}
-
-.precio {
-    display: block;
-    font-family: 'Oswald', sans-serif;
-    font-size: larger;
-    margin: 0;
+.cantidad{
+    
+    font-family: Belanosima;
 }
 
 .Pay {

@@ -1,5 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+@font-face {
+    font-family: Roboto;
+    src: url('../assets/fonts/RobotoSlab-VariableFont_wght.ttf');
+}
 .buttonContainer {
     width: 500px;
     margin: auto;
@@ -22,14 +25,29 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.card:hover{
+    background-color: aquamarine;
+    color: #666;
+}
+
 .PayPal {
     background-color: orange;
     color: rgb(61, 52, 52)
 }
 
+.PayPal:hover{
+    background-color: lightsalmon;
+    color:aliceblue;
+}
+
+
 .Ipad {
     background-color: blue;
     color: aliceblue
+}
+.Ipad:hover{
+    background-color: lightblue;
+    color: #666;
 }
 
 .text1 {
