@@ -5,7 +5,7 @@ import { AppContext } from "../Context/AppContext";
 function Price_Amount(props) {
 
 
-    const { pagina, precio, cantidad, Aumentar, Disminuir, Carro } = useContext(AppContext)
+    const { pagina, cantidad, Aumentar, Disminuir, Carro } = useContext(AppContext)
 
     switch (pagina) {
 
@@ -33,7 +33,7 @@ function Price_Amount(props) {
                         <p className="cantidad">Cantidad</p>
 
                     </div>
-                    <h1 className="pt">{`$${precio}`}</h1>
+                    <h1 className="pt">{`$${props.precio}`}</h1>
 
                     <p className="precio">Price</p>
                 </div>
@@ -46,7 +46,7 @@ function Price_Amount(props) {
 
                         <p className="cantidad">Cantidad</p>
                     </div>
-                    <h1 className="pt">{`$${precio}`}</h1>
+                    <h1 className="pt">{`$${props.precio}`}</h1>
 
                     <p className="precio">Price</p>
                 </div>

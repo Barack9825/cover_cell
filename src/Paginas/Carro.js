@@ -9,7 +9,7 @@ import PayButton from "../componentes/PayButton";
 import PriceAmount from "../componentes/Price-Amount";
 import Selector from "../componentes/Selector";
 import Title from "../componentes/Title";
-import Factura from "./Factura";
+
 
 function Carro() {
 
@@ -26,8 +26,8 @@ function Carro() {
             <Title title='Nila' />
 
             <div className="datos-contenedor">
-
-                <Imagen />
+        
+            
                 <Item itemTitle='Iphone' />
                 <PriceAmount />
 

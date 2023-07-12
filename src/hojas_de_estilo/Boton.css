@@ -19,5 +19,11 @@
     color: #fefefe;
     box-shadow: 0px 2px 2px lightgray;
     cursor: pointer;
+    animation-name: example;
+    animation-duration: 1s;
 }
 
+@keyframes example{
+    from{background-color:#fefefe;}
+    to{background-color: #383434;}
+}

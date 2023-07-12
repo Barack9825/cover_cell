@@ -1,11 +1,9 @@
 .Image-container1 {
-    position: relative;
-    max-height: 50vh;
-    max-width: 25vw;
+    /* position: relative; */
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin: auto;
+    /* align-content: center; */
+    /* margin: auto; */
 }
 
 .Close {
@@ -33,6 +31,91 @@
     max-width: 50%;
     border-radius: 15%;
     margin: auto3
-    /* margin: 0 20%; */
+        /* margin: 0 20%; */
 
+}
+
+.Selected {
+    z-index: 1;
+    height: 50vh;
+    width: 25vw;
+    position: relative;
+}
+
+.onWait {
+    position: absolute;
+    opacity: 0.5;
+    height: 40vh;
+    width: 20vw;
+}
+
+.Animatedin {
+    animation-name: changeCoverin;
+    animation-duration: 0.5s;
+
+}
+
+.Animatedout {
+    animation-name: changeCoverout,changeCoverextra;
+    animation-duration: 0.5s;
+}
+
+.Animatedextra {}
+
+@keyframes changeCoverin {
+    from {
+        height: 50vh;
+        width: 25vw;
+            
+    }
+
+    to {
+        height: 40vh;
+        width: 20vw;
+    }
+}
+
+@keyframes changeCoverout {
+
+    from {
+        height: 40vh;
+        width: 20vw;
+        right: 200px;
+    }
+
+    to {
+        height: 50vh;
+        width: 25vw;
+        right: 0px;
+    }
+}
+
+/* @keyframes changeCoverextra {
+    0% {
+        left: 150px
+    }
+
+    25% {
+        left: 112px
+    }
+
+    50% {
+        left: 75px
+    }
+
+    75% {
+        left: 37px
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+ */
+.After {
+    right: 200px;
+}
+
+.Before {
+    left: 200px;
 }

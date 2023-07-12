@@ -4,24 +4,31 @@ import './Pagina.css';
 
 import Boton from '../componentes/Boton';
 import Fondo from '../componentes/Fondo';
-import Imagen from '../componentes/Imagen';
+import Imagenlist from '../componentes/Imagenlist';
+import Imgicon from '../componentes/ImgIcon';
 import PayButton from '../componentes/PayButton';
 import PriceAmount from '../componentes/Price-Amount';
 import Selector from '../componentes/Selector';
 import Title from '../componentes/Title';
 
-import { AiOutlineShoppingCart } from 'react-icons/ai'
+
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 
 
 function Compra() {
 
-  const { addToCar, Carro, Recepcion } = useContext(AppContext)
+  const { pick,Picked,addToCar, Carro, Recepcion, changeCoverNext,changeCoverPrevious} = useContext(AppContext)
+
+  
+  
 
   return (
 
     <div className="Page">
 
+      
       <Fondo />
       <Selector
         directory='Avanzar'
@@ -38,14 +45,25 @@ function Compra() {
 
       <div className='content'>
 
-        <button className="preview"><Imagen out={false} /></button>
-        <Imagen />
+        <button className="preview">{<Imgicon/>}</button>
+        
+        <MdNavigateBefore 
+        className='Navigator' 
+        onClick={changeCoverPrevious}/>
+        
+        
 
+        <Imagenlist/>
+        
+                
+        <MdNavigateNext 
+        className='Navigator' 
+        onClick={changeCoverNext}/>
       </div>
 
       <div className='footer'>
 
-        <PriceAmount />
+        {/* <PriceAmount /> */}
 
         <div className='selectSize-container'>
 
