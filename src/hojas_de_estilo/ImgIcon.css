@@ -2,12 +2,14 @@
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
-    margin: 0 15npm sstartpx;
+    justify-content: center;
+    margin: 0 15;
+    
 }
 
 .Icon {
     aspect-ratio: 3/4;
     max-height: 100%;
-    max-width: 100%
+    max-width: 100%;
+    border-radius:20%;
 }

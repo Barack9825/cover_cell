@@ -1,29 +1,37 @@
 .boton{
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+    width: 200px;
+    border-radius: 7px;
+    
     background-color:#fefefe;
+    border-color: lightgray;
+    box-shadow: 0px 2px 2px #666;
     color: #383434;
+    
     font-weight: 200;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 10px;
-    margin-bottom: 10px;    
-    border-color: lightgray;
-    width: 200px;
-    box-shadow: 0px 2px 2px #666;
-    border-radius: 7px; 
-    
-    
 }
+
+
 
 .boton:hover{
-    background-color: #383434;
+    background-color: blueviolet;
     color: #fefefe;
+    
     box-shadow: 0px 2px 2px lightgray;
+    
     cursor: pointer;
-    animation-name: example;
-    animation-duration: 1s;
+    
+    animation-name: selected;
+    animation-duration: 0.25s;
 }
 
-@keyframes example{
+
+
+@keyframes selected{
     from{background-color:#fefefe;}
-    to{background-color: #383434;}
+    to{background-color: blueviolet;}
 }

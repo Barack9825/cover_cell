@@ -2,6 +2,7 @@
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    
 }
 
 .content {
@@ -13,11 +14,11 @@
     height: 540px;
 }
 
-.footer{
+.footer {
     margin-top: 10px;
 }
 
-/*Pagina 1*/
+/*Compra*/
 
 .selectSize-container {
     max-width: fit-content;
@@ -42,29 +43,67 @@
     justify-content: center;
 }
 
-.Navigator{
+.Navigator {
     font-size: 150px;
     color: white;
     z-index: 1;
-    
+
 }
 
-.preview     {
-    position: absolute;
-    left: 1%;
-    bottom: 50%;
-    background-color: #ccc;
+.Navigator:hover {
+    color:blueviolet;
+    font-size: 100px;
+    animation-name: seleccion;
+    animation-duration: 0.25s;
+}
+
+.Navigator:active {
+    animation-name: clicked;
+    animation-duration: 0.25s;
+}
+
+@keyframes clicked {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 25px;
+    }
+}
+
+@keyframes seleccion {
+    from {
+        color: white;
+        font-size: 150px;
+    }
+
+    to {
+        font-size: 100px;
+        color:blueviolet
+    }
+
+}
+
+
+.preview {
+    aspect-ratio: 3/2;
     max-height: 18%;
     max-width: 10%;
-    height: 56px;
-    width: 84px;
-    aspect-ratio: 1.5;
+
+    background-color: #ccc;
     border-radius: 50px;
     border-color: lightgray;
     box-shadow: 3px 3px 5px #777;
+
+    position: absolute;
+    left: 1%;
+    bottom: 50%;
+
 }
 
-/*Pagina 2*/
+
+/*Carro*/
 
 .datos-contenedor {
     margin: 0px 150px;
@@ -74,11 +113,10 @@
     margin-top: 20vh;
 }
 
-/*Pagina 3*/
+/*Facturación*/
 
 .foot {
     margin-left: 50%;
     color: #888;
     font-size: 20px;
 }
-

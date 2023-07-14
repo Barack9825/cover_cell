@@ -56,11 +56,14 @@
 }
 
 .Animatedout {
-    animation-name: changeCoverout,changeCoverextra;
+    animation-name: changeCoverout;
     animation-duration: 0.5s;
 }
 
-.Animatedextra {}
+.Animatedout-left{
+    animation-name: changeCoverout-left;
+    animation-duration:0.5s;
+}
 
 @keyframes changeCoverin {
     from {
@@ -90,28 +93,20 @@
     }
 }
 
-/* @keyframes changeCoverextra {
-    0% {
-        left: 150px
+@keyframes changeCoverout-left {
+    from {
+        height: 40vh;
+        width: 20vw;
+        left: 200px;
     }
 
-    25% {
-        left: 112px
-    }
-
-    50% {
-        left: 75px
-    }
-
-    75% {
-        left: 37px
-    }
-
-    100% {
+    to {
+        height: 50vh;
+        width: 25vw;
         left: 0px;
     }
 }
- */
+
 .After {
     right: 200px;
 }

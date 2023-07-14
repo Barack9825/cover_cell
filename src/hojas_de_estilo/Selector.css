@@ -1,12 +1,14 @@
 .arrow {
+    border-radius: 5px;
     width: 50px;
     height: 40px;
-    box-shadow: 1px 2px 5px #666;
-    border-radius: 5px;
-    border-color: lightgray;
     font-size: 1.2em;
-    color: #666;
+
     background-color: #fff;
+    box-shadow: 1px 2px 5px #666;
+    border-color: lightgray;
+    color: blueviolet;
+
 }
 
 .Avanzar {
@@ -17,9 +19,30 @@
     float: left;
 }
 
-.arrow:hover{
-    color:#fff;
-    font-size: 23px;
+.arrow:hover {
+    font-size: 1.5em;
     font-weight: bold;
-    background-color: #666;
+
+    background-color: blueviolet;
+    color: #fff;
+    animation-name: select;
+    animation-duration: 0.25s;
+}
+
+@keyframes select {
+    from {
+        font-size: 1.2em;
+        background-color: #fff;
+        box-shadow: 1px 2px 5px #666;
+        border-color: lightgray;
+        color: #666;
+    }
+
+    to {
+        font-size: 1.5em;
+        font-weight: bold;
+
+        background-color: blueviolet;
+        color: #fff;
+    }
 }

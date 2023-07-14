@@ -1,11 +1,8 @@
-import React, { useContext } from "react"
+import React from "react"
 import '../hojas_de_estilo/Imagen.css'
-import { AppContext } from "../Context/AppContext";
 
-function Imagen({ /* out = true,selected =true,next=true,*/picture, state }) {
 
-  
-  const { pagina } = useContext(AppContext)
+function Imagen({picture, state }) {
 
   return(
     <div className={`Image-container1 ${state}`}>
