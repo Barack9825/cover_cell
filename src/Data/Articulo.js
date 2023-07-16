@@ -11,5 +11,13 @@ export const Articulo = [
         price: 60,
         picture: 'Fondo-minimalista.jpg'
     },
+    {
+        price: 60,
+        picture: 'Opmanga.jpg'
+    },
+    {
+        price: 60,
+        picture: 'Esteban.jpg'
+    }
 ]
 

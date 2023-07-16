@@ -5,11 +5,11 @@ import Imagen from "./Imagen"
 
 function Imagenlist() {
     
-    const { article, selección } = useContext(AppContext)
+    const { article } = useContext(AppContext)
     const listaDeImagenes = article.map((element, index) => {
        
         return (<Imagen
-            state={`${selección === index ? 'Selected':'onWait'} ${selección === (index+1) ? 'After': ''} ${selección === (index-1) ? 'Before': ''}`}
+            state={`${index === 1 ? 'Selected':'onWait'} ${index === 2 ? 'After': ''} ${index === 0 ? 'Before': ''}${index > 2 ? 'hidden':'' }` }
             key={index}
             picture={element.picture} />)
     })

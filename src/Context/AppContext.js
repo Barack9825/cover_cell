@@ -1,23 +1,21 @@
-import React, { useState,useEffect, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { Articulo } from "../Data/Articulo";
 export const AppContext = createContext();
 
 function AppContextProvider(props) {
+
   /*Definición de los Estados*/
+
   const [amount, setAmount] = useState(0);
   const [article, SetArticle] = useState(Articulo);
   const [car, setCar] = useState();
   const [page, setPage] = useState("Compra");
   const [selection, SetSelection] = useState(1);
-  const [pick, SetPick] = useState(article[selection]);
   const [total, setTotal] = useState(0);
 
-  useEffect( () => {
-    
-    SetPick(article[selection]);
-  })
-
+  
   /*Deficinición de constantes*/
+
   const paginado = ["Recepción", "Carro", "Cuentas", "Factura", "Compra"];
 
   const goTO = paginado.map((element) => {
@@ -26,8 +24,9 @@ function AppContextProvider(props) {
     };
   });
 
+
   /*Definición de funciones*/
-  
+
   /*function addToCar() {
      
     setCar(price); 
@@ -42,59 +41,49 @@ function AppContextProvider(props) {
   const Disminuir = () => {
     setAmount(amount - 1);
   };
-  
+
   function Animated(elemento, animacion) {
-    elemento.classList.toggle(animacion);
+    
+    elemento.classList.add(animacion);
     elemento.addEventListener("animationend", () => {
       elemento.classList.remove(animacion);
     });
   }
 
   function changeCoverNext() {
-    if (selection === article.length - 2) {
-      rotacion(true);
-      SetSelection(1);
-    } else {
-      SetSelection(selection + 1);
-    }
+    rotacion(true)
     const elemento = document.getElementsByClassName("Image-container1");
-    const anim = ['l',"Animatedout-left", "Animatedin"];
 
-    for (let index = 0; index < elemento.length; index++) {
-      Animated(elemento[index], anim[index]);
-    }
+    const anim = ["Animatedin-left", "Animatedout-left"];
+
+    Animated(elemento[0],anim[0])
+    Animated(elemento[1],anim[1])
 
   }
 
   function changeCoverPrevious() {
-    
-    if (selection === 1) {
-      rotacion(false);
-    } else {
-      SetSelection(selection - 1);
-    }
-    
+
+    rotacion(false)
     const elemento = document.getElementsByClassName("Image-container1");
+
     const anim = ["Animatedin", "Animatedout"];
 
-    for (let index = 0; index < elemento.length; index++) {
-      Animated(elemento[index], anim[index]);
-    }
+    Animated(elemento[1],anim[1])
+    Animated(elemento[2],anim[0])
 
-    
   }
 
   function rotacion(next) {
     let resultado = [];
     for (let i = 0; i < article.length; i++) {
-      let indice = next ? (i + 1) % article.length : (i - 1) % article.length;
+      let indice = !next ? (i + 1) % article.length : (i - 1) % article.length;
       if (indice < 0) {
         indice = article.length - 1;
       }
       resultado[indice] = article[i];
     }
-    /*  */
-    console.log(resultado)
+    
+
     SetArticle(resultado);
   }
 
@@ -105,7 +94,6 @@ function AppContextProvider(props) {
   return (
     <AppContext.Provider
       value={{
-        elegido: pick,
         pagina: page,
         cantidad: amount,
         article,
@@ -123,7 +111,6 @@ function AppContextProvider(props) {
         Disminuir,
         changeCoverNext,
         changeCoverPrevious,
-        rotacion,
       }}>
       {props.children}
     </AppContext.Provider>
