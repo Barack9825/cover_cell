@@ -7,7 +7,7 @@ import Fondo from "../componentes/Fondo";
 import Imagenlist from "../componentes/Imagenlist";
 import Imgicon from "../componentes/ImgIcon";
 import PayButton from "../componentes/PayButton";
-/* import PriceAmount from '../componentes/Price-Amount'; */
+import PriceAmount from '../componentes/Price-Amount';
 import Selector from "../componentes/Selector";
 import Title from "../componentes/Title";
 
@@ -15,7 +15,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 function Compra() {
-  const { addToCar, Carro, Recepcion, changeCoverNext, changeCoverPrevious } =
+  const { addToCar, Carro, Recepcion, changeCoverNext, changeCoverPrevious,cantidad,article } =
     useContext(AppContext);
 
   return (
@@ -44,7 +44,9 @@ function Compra() {
       </div>
 
       <div className="footer">
-        {/* <PriceAmount /> */}
+        <PriceAmount 
+        cantidad={cantidad}
+        precio={article[1].price}/>
 
         <div className="selectSize-container">
           <p className="selectSize">Select size :</p>

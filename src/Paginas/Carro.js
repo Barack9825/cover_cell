@@ -8,6 +8,7 @@ import PayButton from "../componentes/PayButton";
 import PriceAmount from "../componentes/Price-Amount";
 import Selector from "../componentes/Selector";
 import Title from "../componentes/Title";
+import Carlist from "../componentes/Carlist";
 
 function Carro() {
   const { Compra, Factura } = useContext(AppContext);
@@ -22,7 +23,7 @@ function Carro() {
       <div className="datos-contenedor">
         
         <Item itemTitle="Iphone" />
-        <PriceAmount />
+        <Carlist/>
       
       </div>
 

@@ -5,9 +5,37 @@ import { AppContext } from "../Context/AppContext";
 function Price_Amount(props) {
 
 
-    const { pagina, cantidad, Aumentar, Disminuir, Carro } = useContext(AppContext)
+    const { pagina, cantidad, Aumentar, Disminuir, Carro, article } = useContext(AppContext)
 
-    switch (pagina) {
+    return (
+
+        <div className="PA-container">
+
+            <div className="amount">
+
+                <button
+                    className={`select mas ${pagina==='Carro'? 'hidden':''}`}
+                    onClick={Aumentar}>
+                    +
+                </button>
+
+                <h1 className="amount">{props.cantidad}</h1>
+
+                <button
+                    className={`select menos ${pagina==='Carro'? 'hidden':''}`}
+                    onClick={Disminuir}>
+                    -
+                </button>
+
+                <p className="cantidad">Cantidad</p>
+
+            </div>
+            <h1 className="pt">{`$${props.precio}`}</h1>
+
+            <p className="precio">Price</p>
+        </div>
+    )
+    /* switch (pagina) {
 
         case "Comra":
             return (
@@ -63,7 +91,7 @@ function Price_Amount(props) {
             )
         default:
             break;
-    }
+    } */
 
 
 

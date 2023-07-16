@@ -1,0 +1,19 @@
+.carItem-container::after{
+    content: "";
+    display: table;
+    clear: left;
+}
+.encabezamiento{
+    float:left;
+    width: 25%;
+}
+
+.contenido{
+    float: left;
+    width: 50%;
+}
+
+.foot{
+    float:left;
+    width: 25%;
+}
