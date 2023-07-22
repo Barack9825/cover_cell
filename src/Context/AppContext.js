@@ -1,84 +1,62 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import { Articulo } from "../Data/Articulo";
 export const AppContext = createContext();
 
 function AppContextProvider(props) {
-
   /*Definición de los Estados*/
 
   const [amount, setAmount] = useState(0);
   const [article, SetArticle] = useState(Articulo);
   const [car, setCar] = useState([]);
   const [page, setPage] = useState("Compra");
-  const [selection, SetSelection] = useState(1);
   
 
-
-  /*Deficinición de constantes*/
-
-  const paginado = ["Recepción", "Carro", "Cuentas", "Factura", "Compra"];
-
-  const goTO = paginado.map((element) => {
-    return () => {
-      setPage(element);
-    };
-  });
-
-
   /*Definición de funciones*/
+  function navegar(pag) {
+    setPage(pag);
+  }
 
   function addToCar() {
     if (amount !== 0) {
-      setCar([...car, {
-        modelo: 'iphone',
-        picture: article[1].picture,
-        precio: article[1].price,
-        cantidad: amount,
-        total:article[1].price*amount
-      }])
+      setCar([
+        ...car,
+        {
+          id: car.length,
+          modelo: "iphone",
+          picture: article[1].picture,
+          precio: article[1].price,
+          cantidad: amount,
+          total: article[1].price * amount,
+        },
+      ]);
     }
-  };
+  }
 
+  function eliminate(index) {
+    setCar(car.filter((carro) =>{return carro.id !== index}));
+  }
   /* function Select(){} */
 
-  const Aumentar = () => {
-    setAmount(amount + 1);
-  };
-  const Disminuir = () => {
-    setAmount(amount - 1);
-  };
+  function variarCantidad(valor) {
+    setAmount(amount + valor);
+  }
 
   function Animated(elemento, animacion) {
-
     elemento.classList.add(animacion);
     elemento.addEventListener("animationend", () => {
       elemento.classList.remove(animacion);
     });
   }
 
-  function changeCoverNext() {
-    setAmount(0)
-    rotacion(true)
-    const elemento = document.getElementsByClassName("Image-container1");
+  function changeCover(elementoIn,elementoOut,animacionIn,animacionOut,next) {
+    setAmount(0);
+    rotacion(next);
 
-    const anim = ["Animatedin-left", "Animatedout-left"];
-
-    Animated(elemento[0], anim[0])
-    Animated(elemento[1], anim[1])
-
+    Animated(elementoIn, animacionIn);
+    Animated(elementoOut, animacionOut);
   }
-
-  function changeCoverPrevious() {
-    setAmount(0)
-    rotacion(false)
-    const elemento = document.getElementsByClassName("Image-container1");
-
-    const anim = ["Animatedin", "Animatedout"];
-
-    Animated(elemento[1], anim[1])
-    Animated(elemento[2], anim[0])
-
-  }
+  
+  
 
   function rotacion(next) {
     let resultado = [];
@@ -90,7 +68,6 @@ function AppContextProvider(props) {
       resultado[indice] = article[i];
     }
 
-
     SetArticle(resultado);
   }
 
@@ -100,18 +77,12 @@ function AppContextProvider(props) {
         pagina: page,
         cantidad: amount,
         article,
-        selección: selection,
         carro: car,
-        Recepcion: goTO[0],
-        Carro: goTO[1],
-        Cuenta: goTO[2],
-        Factura: goTO[3],
-        Compra: goTO[4],
+        navegar,
         addToCar,
-        Aumentar,
-        Disminuir,
-        changeCoverNext,
-        changeCoverPrevious,
+        changeCover,
+        variarCantidad,
+        eliminate
       }}>
       {props.children}
     </AppContext.Provider>

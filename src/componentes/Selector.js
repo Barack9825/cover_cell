@@ -3,7 +3,11 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
 import '../hojas_de_estilo/Selector.css'
 
 
-function Selector({ directory,ManejarClick }) {
+function Selector({ directory, ManejarClick}) {
+
+  
+  
+  
 
   return (
     <button

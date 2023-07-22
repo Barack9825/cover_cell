@@ -14,7 +14,7 @@ import Title from "../componentes/Title";
 
 function Recepcion() {
 
-    const {Compra,Cuenta} = useContext(AppContext)
+    const {navegar} = useContext(AppContext)
 
     return (
         <div className="Page">
@@ -43,11 +43,11 @@ function Recepcion() {
                     
                     <Option 
                     text='Comprar'
-                    ManejarClick={Compra}/>
+                    ManejarClick={() => {navegar('Compra')}}/>
                     
                     <Option 
                     text='Manejar Cuentas'  
-                    ManejarClick={Cuenta}/>
+                    ManejarClick={() => {navegar('Cuenta')}}/>
                     
                     <Option text='Añadir Ubicación' />
                 </div>

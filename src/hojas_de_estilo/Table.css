@@ -3,11 +3,20 @@
     width: 33.33%;
     /* background-color: red; */
 }
+.encabezamiento{
+    float:left;
+    width: 25%;
+}
+
+.contenido{
+    float: left;
+    width: 50%;
+}
 
 
 
 .row::after{
     content: "";
     display: table;
-    clear:left;
+    clear:both;
 }

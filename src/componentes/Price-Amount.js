@@ -5,7 +5,7 @@ import { AppContext } from "../Context/AppContext";
 function Price_Amount(props) {
 
 
-    const { pagina, cantidad, Aumentar, Disminuir, Carro, article } = useContext(AppContext)
+    const { pagina, variarCantidad,cantidad } = useContext(AppContext)
 
     return (
 
@@ -14,16 +14,16 @@ function Price_Amount(props) {
             <div className="amount">
 
                 <button
-                    className={`select mas ${pagina==='Carro'? 'hidden':''}`}
-                    onClick={Aumentar}>
+                    className={`select mas ${pagina==='Carro'? 'none':''}`}
+                    onClick={()=>{variarCantidad(1)}}>
                     +
                 </button>
 
                 <h1 className="amount">{props.cantidad}</h1>
 
                 <button
-                    className={`select menos ${pagina==='Carro'? 'hidden':''}`}
-                    onClick={Disminuir}>
+                    className={`select menos ${pagina==='Carro'? 'none':''} ${cantidad ===0 ? 'hidden' : ''}`}
+                    onClick={()=>{cantidad !==0 ? variarCantidad(-1): variarCantidad(0)}}>
                     -
                 </button>
 

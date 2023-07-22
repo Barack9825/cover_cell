@@ -9,7 +9,7 @@ function Imagenlist() {
     const listaDeImagenes = article.map((element, index) => {
        
         return (<Imagen
-            state={`${index === 1 ? 'Selected':'onWait'} ${index === 2 ? 'After': ''} ${index === 0 ? 'Before': ''}${index > 2 ? 'hidden':'' }` }
+            state={`${index === 1 ? 'Selected':'onWait'} ${index === 2 ? 'After': ''} ${index === 0 ? 'Before': ''}${index > 2 ? 'behind':'' }` }
             key={index}
             picture={element.picture} />)
     })

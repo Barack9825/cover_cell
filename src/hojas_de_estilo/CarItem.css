@@ -1,19 +1,55 @@
-.carItem-container::after{
-    content: "";
-    display: table;
-    clear: left;
-}
-.encabezamiento{
-    float:left;
-    width: 25%;
-}
-
-.contenido{
-    float: left;
-    width: 50%;
+.carItem-container{
+    height: 150px;
+    border-width: 5px;
+    border-style:solid;
+    border-color:black;
+    border-radius:50px;
+    background-image: linear-gradient(45deg,blueviolet,white);
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 40px;
 }
 
-.foot{
-    float:left;
-    width: 25%;
+.Imagen_modelo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    /* height: 100px; */
+}
+
+.picture{
+    aspect-ratio: 2/3;
+    width: 15%;
+    min-width: 35px;
+    max-width: 45px;
+    border-radius: 10px;
+}
+
+.modelo{
+    font-family:Dancing Script;
+    font-size:25px;
+    font-weight: bold;
+    margin: 0px
+}
+
+.eliminar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px
+}
+
+.eliminar:hover{
+    color:white;
+    animation-name:selected;
+    animation-duration: 0.2s;
+}
+@keyframes selected {
+    from{color:black}
+    to{color:white}
 }

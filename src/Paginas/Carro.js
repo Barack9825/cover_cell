@@ -11,25 +11,24 @@ import Title from "../componentes/Title";
 import Carlist from "../componentes/Carlist";
 
 function Carro() {
-  const { Compra, Factura } = useContext(AppContext);
+  const { navegar } = useContext(AppContext);
 
   return (
     <div className="Page">
-      <Selector directory={"Retroceder"} ManejarClick={Compra} />
+      <Selector directory={"Retroceder"} ManejarClick={() => {navegar('Compra')}} />
 
       <Fondo />
       <Title title="Nila" />
 
       <div className="datos-contenedor">
         
-        <Item itemTitle="Iphone" />
         <Carlist/>
       
       </div>
 
       <div className="groupOfButton">
         <PayButton 
-        ManejarClick={Factura} 
+        ManejarClick={() => {navegar('Factura')}} 
         typeButton="card" 
         text2="Check out" />
 

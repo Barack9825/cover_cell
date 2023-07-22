@@ -7,7 +7,11 @@ function Option(props) {
         <div
             className="Option"
             onClick={props.ManejarClick}>
-
+            {/* <img
+            className="compras"
+            src={require('../assets/compras.jpg')}
+            alt='imagen de covers'
+            /> */}
             <h1 className="optionText">
                 {props.text}
             </h1>
